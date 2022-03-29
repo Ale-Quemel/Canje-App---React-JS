@@ -1,0 +1,39 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(165, 136, 218);
+    width: 100%;
+    
+
+}
+
+.NavBar div h2 {
+    font-size: 35px;
+}
+
+.NavBar__list{
+    display: flex;
+    list-style-type: none;
+    margin-left: 100px;
+}
+
+.NavBar__list li {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.NavBar__list a {
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.NavBar__list a:hover{
+    color: rgb(255, 187, 0);
+    transition: 1s;
+    font-size: 32px;
+    
+}
