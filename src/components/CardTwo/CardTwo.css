@@ -1,0 +1,31 @@
+.ctn__cardTwo{
+    width: 250px;
+    height: 500px;
+    background: rgb(235, 224, 177);
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center; 
+}
+
+.ctn__cardTwo:hover {
+    background-color: rgb(216, 205, 147);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.ctn__cardTwo__img {
+    max-width: 90%;
+    
+}
+
+.ctn__cardTwo__title {
+    width: 100%;
+    margin: 0%;
+}
+
+.ctn__cardTwo__dscp {
+    margin: 0%;
+}
