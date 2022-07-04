@@ -1,13 +1,22 @@
+
+.ctn__cards__mayor{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+} 
+
+
 .ctn__card {
     width: 250px;
-    height: 500px;
+    height: 400px;
+    margin: 15px;
     background: rgb(235, 224, 177);
     border-radius: 19px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-around;
     align-items: center;
+
 }
 
 .ctn__card:hover {
@@ -24,8 +33,14 @@
 .ctn__card__title {
     width: 100%;
     margin: 0%;
+    font-size: 22px;
+    font-family: 'Roboto';
 }
 
 .ctn__card__dscp {
     margin: 0%;
+    font-family: 'Roboto';
+    font-size: 15px;
+
 }
+

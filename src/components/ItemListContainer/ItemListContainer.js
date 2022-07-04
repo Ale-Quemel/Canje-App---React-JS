@@ -1,7 +1,22 @@
-import './ItemListContainer.css'
+import { useEffect, useState } from 'react';
+import customFetch from '../Products/CustomFetch';
+import products from '../Products/products';
+import ItemList from '../ItemList/ItemList';
+function ItemListContainer() {
+    const [items, setItems] = useState([]);
+    
+    useEffect(() => {
+        customFetch(2000, products)
+        .then(resolve => setItems(resolve))
+    }, [items]);
 
-const ItemListContainer = (props) => {
-    return <h1 className="title">{props.salute}</h1>
+    console.log(items);
+
+    return (
+        <div>
+            <ItemList className="cardStyle" products={items}/>
+        </div>
+    )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
