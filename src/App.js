@@ -6,11 +6,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
-    <div className="App">
-        <NavBar/>
-        <ItemListContainer/>
+    <body className='body__ctn'>
+      <div className="App">
+          <NavBar/>
+          <ItemListContainer/>
 
-    </div>
+      </div>
+    </body>
   );
 }
 

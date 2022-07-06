@@ -10,11 +10,9 @@ function ItemListContainer() {
         .then(resolve => setItems(resolve))
     }, [items]);
 
-    console.log(items);
-
     return (
         <div>
-            <ItemList className="cardStyle" products={items}/>
+            <ItemList products={items}/>
         </div>
     )
 }
