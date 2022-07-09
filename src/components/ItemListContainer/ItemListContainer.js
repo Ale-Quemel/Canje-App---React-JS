@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import customFetch from '../Products/CustomFetch';
 import products from '../Products/products';
 import ItemList from '../ItemList/ItemList';
+import './ItemListContainer.css'
+
 function ItemListContainer() {
     const [items, setItems] = useState([]);
     
@@ -11,7 +13,7 @@ function ItemListContainer() {
     }, [items]);
 
     return (
-        <div>
+        <div className='div__ctn___cards'>
             <ItemList products={items}/>
         </div>
     )
