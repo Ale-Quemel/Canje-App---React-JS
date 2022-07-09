@@ -1,4 +1,4 @@
-const products = [
+export const products = [   
     {
         id: 1,
         price: 7550,
@@ -65,4 +65,10 @@ const products = [
     }    
 ]
 
-export default products;
+export const customFetch = (time, task) => {
+    return new Promise ((resolve, reject) => {
+        setTimeout (() => {
+        resolve(task);
+        }, time);
+    });
+}

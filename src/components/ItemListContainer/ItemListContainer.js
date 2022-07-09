@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import customFetch from '../Products/CustomFetch';
-import products from '../Products/products';
+import { customFetch } from '../Products/asynmock';
+import { products } from '../Products/asynmock';
 import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css'
 
