@@ -49,15 +49,6 @@
   padding: 0%;
 }
 
-
-.div__ctn___cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  
-
-}
 /* .ctn__cards {
   display: flex;
   flex-direction: row;
