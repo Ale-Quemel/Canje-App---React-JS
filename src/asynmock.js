@@ -1,6 +1,6 @@
-export const products = [   
+const products = [   
     {
-        id: 1,
+        id: '1',
         price: 7550,
         name: 'Joystick',
         description: 'Compatible con Ps4 y Ps5.',
@@ -10,7 +10,7 @@ export const products = [
         stock: 5
     },
     {
-        id: 2,
+        id: '2',
         price: 9500,
         name: 'Bicicleta',
         description: 'Bicicleta de paseo, rodado 26.',
@@ -20,7 +20,7 @@ export const products = [
         stock: 3
     },
     {
-        id: 3,
+        id: '3',
         price: 15400,
         name: 'Longboard',
         description:'Cruiser Retro, inspirado en los 70',
@@ -30,7 +30,7 @@ export const products = [
         stock: 3
     },
     {
-        id: 4,
+        id: '4',
         price: 1300,
         name: 'Maniquí',
         description:'Para estudio/ referencia artística',
@@ -40,7 +40,7 @@ export const products = [
         stock: 8
     },
     {
-        id: 5,
+        id: '5',
         price: 12000,
         name: 'Mesa',
         description:'Estilo escandinava para 6 personas',
@@ -50,7 +50,7 @@ export const products = [
         stock: 5
     },
     {
-        id: 6,
+        id: '6',
         price: 800,
         name: 'Peluche',
         description:'Oso de tela fina ',
@@ -60,7 +60,7 @@ export const products = [
         stock: 12
     },
     {
-        id: 7,
+        id: '7',
         price: 3500,
         name: 'Silla Pc',
         description:'Patas metálicas, tela de cuero',
@@ -70,7 +70,7 @@ export const products = [
         stock: 6
     },
     {
-        id: 8,
+        id: '8',
         price: 1500,
         name: 'Remera',
         description:'100% Algodón, varios colores.',
@@ -84,15 +84,15 @@ export const products = [
 export const getProduct = () => {
     return new Promise ((resolve) => {
         setTimeout (() => {
-        resolve(products);
-        }, 2000);
-    });
-};
+            resolve(products)
+        }, 1000)
+    })
+}
 
-export const getProductDetail = () => {
-    return new Promise ((resolve) => {
-        setTimeout (() => {
-        resolve(products);
-        }, 5000);
-    });
-};
+export const getProductsById = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 500)
+    })
+}

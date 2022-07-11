@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
-import { getProductDetail } from "../Products/asynmock";
-import ItemDetail from './ItemDetail';
+import { getProductsById } from "../../asynmock";
+import ItemDetail from '../ItemDetail/ItemDetail';
+import './ItemDetailContainer'
 
-function ItemDetailContainer() {
-    const [product, setProduct] = useState([]);
+const  ItemDetailContainer = () => {
+    
+    const [product, setProduct] = useState()
     
     useEffect(() => {
-        getProductDetail().then(resolve => setProduct(resolve))
-    }, [])
+        getProductsById('1').then(resolve => {
+            setProduct(resolve)
+        })
+    },  [])
 
     return (
-        <div>
-            <ItemDetail product={product}/>
+        <div className="ItemDetailContainer">
+            <ItemDetail title={product?.name} detail={product?.detail}/>
         </div>
     )
 }
