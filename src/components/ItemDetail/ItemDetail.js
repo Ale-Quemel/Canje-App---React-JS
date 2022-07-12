@@ -1,13 +1,13 @@
 
 import './ItemDetail.css';
 
-const ItemDetail = ({title, detail}) => {
+const ItemDetail = ({name, detail, image, alt}) => {
+    
     return(
         <div className="div__detail ">
-            <h2>ItemDetail</h2>
-            <h3>{title}</h3>            
-            <h4>{detail}</h4>
-            
+            <h2>{name}</h2>
+            <h4>{detail}</h4> 
+            {/* <img className='img__detail' alt={alt} src={image}/> */}
         </div>
 
     )

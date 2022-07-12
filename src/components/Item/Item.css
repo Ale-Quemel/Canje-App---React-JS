@@ -1,15 +1,10 @@
 
 
 .ctn__card {
-    /* width: 250px;
-    height: 400px;
-    margin: 15px;
-    background: rgb(235, 224, 177);
-    border-radius: 19px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
-    width: 100px;
+    
+    width: 320px;
+    height: 520px;
+    box-sizing: border-box;
     margin: 20px;
     border-radius: 15px;
     overflow: hidden;
@@ -44,9 +39,9 @@
     text-align: center;
 }
 
-.ctn__card__dscp p {
-    line-height: 1.5;
+.ctn__card__dscp  {
     color: rgb(41, 41, 41);
+    font-weight: 500;
 }
 
 .ctn__card__title h2 {
@@ -54,20 +49,26 @@
     margin-bottom: 15px;
 }
 
-
-
-
-/* .ctn__card__title {
-    width: 100%;
-    margin: 0%;
-    font-size: 22px;
-    font-family: 'Roboto';
+.detail__btn {
+    height: 60px;
+    width: 70px;
+    color: #ffbf0e;
+    background-color: #f5fff9;
+    border: 3px solid #eeca66;
+    border-radius: 7px;
+    transition: all 400ms ease;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
 }
 
-.ctn__card__dscp {
-    margin: 0%;
-    font-family: 'Roboto';
-    font-size: 15px;
-
-} */
-
+.detail__btn:hover {
+    color: white;
+    background-color: #f5d15a;
+    border: solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 1s;
+    font-size: 22px;
+    
+    
+}

@@ -1,14 +1,27 @@
-import { useEffect, useState } from 'react';
-import { getProduct } from '../../asynmock';
-import ItemList from '../ItemList/ItemList';
 import './ItemListContainer.css'
+import { useEffect, useState } from 'react';
+import { getProduct, getProductsByCategory, getProductsById } from '../../asynmock';
+import ItemList from '../ItemList/ItemList';
+import {useParams } from 'react-router-dom'
 
-function ItemListContainer() {
+
+const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
+
+    const { categoryId } = useParams()
     
     useEffect(() => {
-        getProduct().then(resolve => setProducts(resolve))
-    }, []);
+        if(!categoryId) {
+            getProduct().then(response => {
+                setProducts(response)
+            })
+        } else {
+            getProductsByCategory(categoryId).then(response => {
+                setProducts(response)
+            })
+        }
+       
+    }, [categoryId]);
 
     return (
         <div className='div__ctn___cards'>
