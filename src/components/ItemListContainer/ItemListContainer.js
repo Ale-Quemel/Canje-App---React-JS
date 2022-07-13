@@ -1,6 +1,6 @@
 import './ItemListContainer.css'
 import { useEffect, useState } from 'react';
-import { getProduct, getProductsByCategory, getProductsById } from '../../asynmock';
+import { getProduct, getProductsByCategory } from '../../asynmock';
 import ItemList from '../ItemList/ItemList';
 import {useParams } from 'react-router-dom'
 

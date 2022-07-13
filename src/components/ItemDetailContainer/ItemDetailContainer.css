@@ -1,6 +1,5 @@
-.ItemDetailContainer {
-    width: 200px;
-    height: 200px;
-    align-items: center;
-
-}
+ .ItemDetailContainer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+} 
