@@ -1,3 +1,9 @@
-.cart-icon {
-    margin-left: 10rem;
+.cartWidget{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    background-color: rgb(74, 212, 189);
+    border-radius: 13px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+
 }

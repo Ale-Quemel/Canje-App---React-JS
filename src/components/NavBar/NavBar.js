@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="NavBar">
             <div> 
                 <Link to='/' className='NavBar__title'>
-                    <h2>Canje App</h2>
+                    <h2>CanjeApp</h2>
                 </Link>    
             </div>
             <ul className="NavBar__list">

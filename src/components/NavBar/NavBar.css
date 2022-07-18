@@ -5,11 +5,15 @@
     justify-content: space-around;
     background-color: rgb(165, 136, 218);
     width: 100%;
+    box-sizing: content-box;
+
 }
 
 .NavBar__title{
     font-size: 30px;
     text-decoration: none;
+    box-sizing: border-box;
+
 }
 
 .NavBar__list{
@@ -19,7 +23,8 @@
 }
 
 .NavBar__list li {
-    padding: 20px;
+    padding: 30px;
+    font-weight: 350;
     box-sizing: border-box;
 }
 

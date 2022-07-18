@@ -1,0 +1,33 @@
+.cartProducts{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    font-size: 2rem;
+
+}
+
+.cartProducts__title {
+    font-weight: 500;
+}
+
+.btn__remove {
+    height: 60px;
+    width: 70px;
+    color: #ffbf0e;
+    background-color: #ffffff;
+    border: 3px solid #eeca66;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn__remove:hover{
+    color: white;
+    background-color: #f8d152;
+    border: solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 1s;
+    font-size: 17px;
+}

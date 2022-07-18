@@ -2,38 +2,32 @@
 import { useState } from "react";
 import './ItemCount.css'
 
-const ItemCount = ({onConfirm, stock, initial = 0}) => {
-    const [count, setCount] = useState(initial);
+const ItemCount = ({onConfirm, stock, initial = 1}) => {
+    const [quantity, setQuantity] = useState(initial);
 
     const increment = () => {
-        if(count < stock) {
-            setCount(count + 1);
+        if(quantity < stock) {
+            setQuantity(quantity + 1);
         }
     }
 
     const decrement = () => {
-        if(count > 0) {
-            setCount(count - 1)
+        if(quantity > 1) {
+            setQuantity(quantity - 1)
         }
     }
 
-    /* const onAdd = (count) => {
-        console.log('Agregaste al carrito');
-        console.log(count);
-    
-     
-    }  */
 
     return(
         <div>
             <div className="countButton">
                 <button className="buttons" onClick={decrement}>-</button>
-                <h1>{count}</h1>
+                <h1>{quantity}</h1>
                 <button className="buttons" onClick={increment}>+</button>
             </div>
     
             <div className="addButton">
-                <button onClick={() => onConfirm(count)}>Añadir al carrito</button>
+                <button onClick={() => onConfirm(quantity)}>Añadir al carrito</button>
             </div>
             
         </div>

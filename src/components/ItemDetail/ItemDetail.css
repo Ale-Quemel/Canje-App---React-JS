@@ -88,14 +88,52 @@ div .ctn__detail {
     
 }
 
-.cart__btn{
-    color: #55cc81;
+.cart__btn1{
+    display: flex;
+    color: #4ad4bd;
     background-color: #f5fff9;
-    border: 3px solid #9ee0b6;
+    border: 3px solid #4ad4bd;
     border-radius: 4px;
     transition: all 400ms ease;
     font-size: 25px;
     padding: 5px 15px;
+    margin: 20px;
     text-decoration: none;
+    justify-content: center;
     
+}
+
+.cart__btn1:hover{
+    color: #4ad4bd;
+    background-color: #f5fff9;
+    border: solid #3ca392;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cart__btn2{
+    display: flex;
+    color: #f5fff9;
+    background-color: #4ad4bd;
+    border: 3px solid #3ca392;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-size: 25px;
+    padding: 5px 15px;
+    margin: 20px;
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+.cart__btn2:hover{
+    color: rgb(255, 255, 255);
+    background-color: #4ad4bd;
+    border: solid #24665b;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 26px;
+    font-weight: 600;
 }

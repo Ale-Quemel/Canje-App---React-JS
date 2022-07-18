@@ -1,19 +1,12 @@
 .countButton{
-    /* display: flex;
-    font-size: 20px;
-    align-items: center; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .countButton button {
-    /* padding: 0 30px; */
     height: 60px;
     width: 70px;
-    /* color: #55cc81;
-    background-color: #f5fff9;
-    border: 3px solid #9ee0b6; */
     color: #ffbf0e;
     background-color: #f5fff9;
     border: 3px solid #eeca66;
@@ -29,13 +22,14 @@
 }
 
 .addButton button {
-    color: #55cc81;
+    color: #4ad4bd;
     background-color: #f5fff9;
-    border: 3px solid #9ee0b6;
+    border: 3px solid #4ad4bd;
     border-radius: 4px;
     transition: all 400ms ease;
     font-size: 25px;
     padding: 5px 15px;
+    margin: 15px;
 }
 
 
@@ -50,7 +44,7 @@
 
 .addButton button:hover{
     color: white;
-    background-color: #55cc81;
+    background-color: #4ad4bd;
     border: solid rgb(255, 255, 255);
     cursor: pointer;
     transition: 1s;
