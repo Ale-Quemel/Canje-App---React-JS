@@ -1,11 +1,10 @@
 import './CartWidget.css'
-import { useContext } from 'react'
-import CartContext from '../../CartContext/CartContext'
+import { useCart } from "../../CartContext/CartContext"
 import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
 
-    const { getQuantity } = useContext(CartContext)
+    const { getQuantity } = useCart ()
 
     const quantity = getQuantity()
 

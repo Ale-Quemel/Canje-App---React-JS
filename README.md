@@ -3,12 +3,12 @@
 ## Sobre la plataforma
 
 > Esta plataforma pretende relizar intercambios de manera online, donde la moneda de cambio radica en las valoraciones y acuerdos entre los usuarios interesados.
-> Sin la necesidad de dinero (físico o digital) y poniendo el foco en la reutilización, incetivamos al usuario a ser parte de una comunidad que busca ayudarse bajo contratos sociales > establecidos con transparencia, onciencia y empatía por el otro.
+> Sin la necesidad de dinero (físico o digital) y poniendo el foco en la reutilización, incetivamos al usuario a ser parte de una comunidad que busca ayudarse bajo contratos sociales establecidos con transparencia, onciencia y empatía por el otro.
 
 ## Guía de Desarrollo
 ### Inicio
 
-Para inicializar el proyecto se requiere clonarlo, ejecutando por consola el comando: "npm install" luego de realizar la intalación. El siguiente paso es ejectuar el comando "npm start" para poder visualizar el proyecto en el "local host 3000".
+Para inicializar el proyecto se requiere clonarlo, ejecutando por consola el comando: "npm install" luego de realizar la intalación. El siguiente paso es ejectuar el comando "npm start" para poder visualizar el proyecto en el "local host ...".
 
 ### Navegación
 
@@ -31,6 +31,7 @@ Una vez que el usuario agrega ese producto al carrito de compras, aparacerán do
 ### Carrito de Compras
 
 Dentro del carrito de compras el Usuario podrá acceder a dos botones, el primero "Borrar" que cumple la función de quitar el producto del carrito. Y el segundo "Vaciar Carrito", que permitirá al usuario limpiar el carrito de todos los productos que había seleccionado hasta el momento.
+Cuando el Usuario ejerce esta última acción, aparecerá un nuevo botón "¡Seguir Comprando!", que le permitirá volver a la sección principal.
 
 
 

@@ -1,14 +1,17 @@
 .cartProducts{
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
     font-size: 2rem;
+    border: 3px solid #250c61;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 
 }
 
 .cartProducts__title {
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 .btn__remove {

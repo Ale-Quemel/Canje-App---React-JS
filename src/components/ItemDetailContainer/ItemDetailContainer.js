@@ -24,8 +24,8 @@ const  ItemDetailContainer = () => {
 
     if(loading) {
         return <div>
-                    <h1>¡Cargando tu producto!</h1>
-                    <iframe src="https://giphy.com/embed/wvtt4mtViPOSrLYNFh" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/music-loading-colkie-wvtt4mtViPOSrLYNFh"></a></p>
+                    <h1 className='load__title'>¡Cargando tu producto!</h1>
+                    <img className='load__gif' alt='cargando-producto' src='../images/70.gif'/>
                 </div>
     }
 

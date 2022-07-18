@@ -3,6 +3,11 @@
     font-size: 2.8rem;
 }
 
+.cart__items{
+    border: 3px solid #000000;
+
+}
+
 .btn__clean{
     color: #4ad4bd;
     background-color: #f5fff9;
@@ -15,6 +20,8 @@
     margin: 15px;
     align-items: center;
     justify-items: center;
+    text-decoration: none;
+    
 }
 
 .btn__clean:hover{

@@ -3,3 +3,11 @@
     justify-content: center;
     padding: 50px;
 } 
+
+.load__title {
+    margin-top: 50px;
+}
+
+.load__gif {
+    margin-top: 120px;
+}
