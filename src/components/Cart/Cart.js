@@ -26,7 +26,7 @@ const Cart = () => {
             <ItemCart/>    
             <h2>Total: ${totalToPay}</h2>
             <button className='btn__clean' onClick={removeAllItem}>VACIAR CARRITO</button>
-
+            <Link className='btn__clean2' to='/orders'>CREAR ORDEN DE COMPRA</Link>
         </div>
 
     )

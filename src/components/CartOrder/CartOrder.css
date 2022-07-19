@@ -1,0 +1,24 @@
+.btn__clean{
+    color: #4ad4bd;
+    background-color: #f5fff9;
+    border: 3px solid #4ad4bd;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 8px 15px;
+    margin: 15px;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    
+}
+
+.btn__clean:hover{
+    color: white;
+    background-color: #4ad4bd;
+    border: solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 1s;
+    font-size: 28px;
+}
