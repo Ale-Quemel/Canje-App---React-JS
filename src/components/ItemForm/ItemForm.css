@@ -1,0 +1,63 @@
+.itemForm__div {
+    margin-top: 80px;
+}
+
+.itemForm__div h2 {
+    font-size: 2.3rem;
+}
+
+.itemForm__div p {
+    font-size: 2rem;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+
+.itemForm {
+    margin: 150px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 15px;
+    background-color: #f7d579;
+    border-radius: 13px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.item__p {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.item__input{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+input.item__btn{
+    color: #4ad4bd;
+    background-color: #f5fff9;
+    border: 3px solid #4ad4bd;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-size: 25px;
+    padding: 5px 15px;
+    margin: 20px;
+    text-decoration: none;
+    
+    
+}
+
+.item__btn:hover{
+    color: #4ad4bd;
+    background-color: #f5fff9;
+    border: solid #3ca392;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 28px;
+    font-weight: 600;
+}

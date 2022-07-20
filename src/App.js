@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartContextProvider } from './CartContext/CartContext';
 import Cart from './components/Cart/Cart';
 import CartOrder from './components/CartOrder/CartOrder';
+import { Navigate } from 'react-router-dom';
+import ItemForm from './components/ItemForm/ItemForm';
 
 
 const App = () => {
@@ -20,8 +22,9 @@ const App = () => {
               <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
               <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
               <Route path='/cart' element={<Cart />}/>
-              <Route path='*' element={<h1>PAGE NOT FOUND</h1>}/>
-              <Route path='/orders' element={<CartOrder/>} />
+              <Route path='*' element={<Navigate to='/'/>}/>
+              <Route path='/orders' element={<CartOrder/>}/>
+              <Route path='/login' element={<ItemForm/>}/>
             </Routes>
           </BrowserRouter>
         </CartContextProvider>

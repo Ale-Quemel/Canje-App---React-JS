@@ -21,17 +21,23 @@ La App posee 4 cateogorías cuya función es la de mejorar la experiencia de com
 
 ### Productos
 
-Cada producto  posee un link para ver más detalles del mismo, haciendo click en "Ver detalle". Con obtenemos las especificaciones técnicas y la imagen en un formato más amplio para poder apreciar los aspectos del producto en cuestión. 
+Cada producto  posee un link para ver más detalles del mismo, haciendo click en "VER DETALLE". Con obtenemos las especificaciones técnicas y la imagen en un formato más amplio para poder apreciar los aspectos del producto en cuestión. 
 
 ### Botones
 
 Cuando el usuario se introduce a ver más detalles del producto, se encontrará con un contador para poder sumar la cantidad que el sotck le permita y por debajo, un botón que le permite "Añadir al Carrito" la cantidad que indicó.
-Una vez que el usuario agrega ese producto al carrito de compras, aparacerán dos botones importantes: "Ir al Carrito", cuya función dirige al usuario a la visualización de todos los productos que agregó en un su transito por la web hasta el momento, y por otro lado "Seguir Comprando" para que el usuario vuelva a redirigirse a la página principal y reanudar su flujo de compra en el sitio. 
+Una vez que el usuario agrega ese producto al carrito de compras, aparacerán dos botones importantes: "IR AL CARRITO", cuya función dirige al usuario a la visualización de todos los productos que agregó en un su transito por la web hasta el momento, y por otro lado "Seguir Comprando" para que el usuario vuelva a redirigirse a la página principal y reanudar su flujo de compra en el sitio. 
 
 ### Carrito de Compras
 
-Dentro del carrito de compras el Usuario podrá acceder a dos botones, el primero "Borrar" que cumple la función de quitar el producto del carrito. Y el segundo "Vaciar Carrito", que permitirá al usuario limpiar el carrito de todos los productos que había seleccionado hasta el momento.
+Dentro del carrito de compras el Usuario podrá acceder a dos botones, el primero "BORRAR" que cumple la función de quitar el producto del carrito. Y el segundo "VACIAR CARRITO", que permitirá al usuario limpiar el carrito de todos los productos que había seleccionado hasta el momento.
 Cuando el Usuario ejerce esta última acción, aparecerá un nuevo botón "¡Seguir Comprando!", que le permitirá volver a la sección principal.
+
+### Orden de Compras
+
+Para terminar de crear la orden de compras que contenga todos los productos que se agregaron al carrito, el usuario debe completar un formulario que se visualiza en la misma página. Completado el formulario, el usuario podrá acceder al botón "CREAR ORDEN DE COMPRA" para obtener el número de orden.
+
+
 
 
 

@@ -13,9 +13,9 @@ const ItemCart = () => {
                 return(
                     <div key={prod.id} className='cartProducts'>
                         <div  className='cartProducts__title'>{prod.name} </div>
-                        <div> Cantidad: {prod.quantity} </div>
-                        <div> Precio: ${prod.price} </div>
-                        <div> Subtotal: ${prod.price * prod.quantity}</div>
+                        <div>| Cantidad: {prod.quantity} </div>
+                        <div>| Precio: ${prod.price} </div>
+                        <div>| Subtotal: ${prod.price * prod.quantity} </div>
                         <button className="btn__remove" onClick={() => removeItem(prod.id)}>Borrar</button>
                         
                     </div>
