@@ -9,6 +9,7 @@ import Cart from './components/Cart/Cart';
 import CartOrder from './components/CartOrder/CartOrder';
 import { Navigate } from 'react-router-dom';
 import ItemForm from './components/ItemForm/ItemForm';
+import PreviewOrder from './components/PreviewOrder/PreviewOrder';
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
               <Route path='*' element={<Navigate to='/'/>}/>
               <Route path='/orders' element={<CartOrder/>}/>
               <Route path='/login' element={<ItemForm/>}/>
+              <Route path='/confirmar-order' element={<PreviewOrder/>} />
+
             </Routes>
           </BrowserRouter>
         </CartContextProvider>

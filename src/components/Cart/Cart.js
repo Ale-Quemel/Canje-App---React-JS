@@ -11,7 +11,7 @@ const Cart = () => {
 
     const { cart, removeAllItem, totalProductsAdded, totalToPay } = useCart()
 
-    const createOrder = () => {
+    /* const createOrder = () => {
         console.log(('Crear Orden de Comprasss'));
 
         const objOrder = {
@@ -36,7 +36,7 @@ const Cart = () => {
         })
 
 
-    }
+    } */
 
 
 
@@ -57,7 +57,7 @@ const Cart = () => {
             <h2>Total: ${totalToPay}</h2>
             <button className='btn__clean' onClick={removeAllItem}>VACIAR CARRITO</button>
             <ItemForm/>
-            <button onClick={createOrder} className='btn__clean2'>CREAR ORDEN DE COMPRA</button>
+            {/* <button onClick={createOrder} className='btn__clean2'>CREAR ORDEN DE COMPRA</button>  */}
         </div>
 
     )
