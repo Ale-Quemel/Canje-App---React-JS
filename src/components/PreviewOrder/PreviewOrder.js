@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import SweetAlert2 from 'react-sweetalert2';
 import { useCart } from '../../CartContext/CartContext'
 import { db } from '../../services/Firebase';
+import Cart from '../Cart/Cart';
 import CustomModal from '../CustomModal';
 
 
@@ -48,6 +49,8 @@ const PreviewOrder = () => {
 
 }
 
+  console.log(cart);
+
   return (
     <div>
       <h1>Confirmación de Compra</h1>
@@ -57,11 +60,16 @@ const PreviewOrder = () => {
         <li>{order.address}</li>
         <li>{order.email}</li>
         <li>{order.name}</li>
-
-        <button onClick={createOrder} type='button' className='btn__clean2'>CONFIRMAR DATOS</button>
-
-
       </ul>
+
+      <ul>
+        {cart.map(product => (
+          <li key={product.id}>
+            {product.name}
+          </li>
+        ))}
+      </ul> 
+      <button onClick={createOrder} type='button' className='btn__clean2'>CONFIRMAR DATOS</button>
       <CustomModal {...modalProps}/>
 
     </div>
