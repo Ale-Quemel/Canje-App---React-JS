@@ -24,7 +24,8 @@ const ItemListContainer = () => {
             })
             setProducts(products)
         }).catch(error => {
-            console.log(error)
+            console.log("Error al obtener los productos:", error);
+            alert("No se pudieron cargar los productos. Por favor, verifica los permisos en Firebase.");
         }).finally(() => {
             setLoading(false)
         })
